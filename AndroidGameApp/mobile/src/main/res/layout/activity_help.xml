@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="150dp"
+    android:orientation="vertical"
+    tools:context="com.example.amitakamat.androidgameapp.Help"
+    android:background="@drawable/home">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/RHE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="0"
+        android:padding="5dp">
+
+        <TableRow android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/friendlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_above="@+id/buttonScore"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/friendlabel" />
+
+            <ImageButton
+                android:id="@+id/friend"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/buttonScore"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/friend" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <ImageButton
+                android:id="@+id/enemylabel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_above="@+id/buttonScore"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/enemylabel" />
+
+            <ImageButton
+                android:id="@+id/enemy"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/buttonScore"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/enemy" />
+
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/textHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Kill the enemies and let the friends pass. Game ends if you kill 3 friends or let 5 enemies escape. Touch to speed up and move upwards and leave to move downwards and speed down."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:background="@drawable/back"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonBack"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>
